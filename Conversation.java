@@ -11,6 +11,8 @@ public class Conversation {
 	int birthyear;
 	double priceOrange;
 	double pricePeanuts;
+    double priceBread;
+    double priceWatermelon;
 	double totalPrice=0;  //initialize to 0
    
     System.out.println("Welcome. Type your first name and press enter.");
@@ -46,8 +48,12 @@ public class Conversation {
 	pricePeanuts = reader.nextDouble();
 	totalPrice += pricePeanuts;
     //Part 4 code for bread and watermelon
-
-
+    System.out.print("How much does the bread cost? $");
+	priceBread = reader.nextDouble();
+    totalPrice += priceBread;
+    System.out.print("How much does the watermelon cost? $");
+	priceWatermelon = reader.nextDouble();
+      totalPrice += priceWatermelon;
 
 	System.out.println("The total cost is $" + totalPrice);
    
